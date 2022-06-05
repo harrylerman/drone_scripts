@@ -41,7 +41,7 @@ def readlog(file, params):
     '''    
     #open the file and use Python's csv module to read it:
     csvfile = open(file, 'r')
-    reader = csv.DictReader(csvfile)   
+    reader = csv.DictReader(csvfile, delimiter='\t')   
     plots = [[] for i in range(len(params))] #initialize a list of empty lists
     time = []
     #read in whatever columns we want according to the column header label:
