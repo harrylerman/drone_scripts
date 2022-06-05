@@ -338,4 +338,5 @@ if __name__ == '__main__':
             print(json.dumps(fields, indent=4))
     else:
         fields = args.fields or Telemetry.DEFAULT_FIELDS
-        Telemetry.logs_to_csv(args.output, args.tlogs, fields, verbose=verbose)
+        # Telemetry.logs_to_csv(args.output, args.tlogs, fields, verbose=verbose)
+        Telemetry.logs_to_csv(args.output, args.tlogs, fields, csv_sep='\t', verbose=verbose)
