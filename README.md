@@ -19,4 +19,4 @@ my_fields_new.json: available fields in our tlogs.
 
 There is also a tlog from a flight on June 2, 2022 and that tlog converted to a .csv.
 
-Note: these csv-converted tlogs use tabs for delimiters to avoid issues with lists (ie battery cell voltages). To view/manipulate in MS Excel, use Data -> Get Data -> From Text/CSV, and ensure tab delimiter is selected.
+Note: these csv-converted tlogs use tabs for delimiters to avoid issues with lists (ie battery cell voltages) and commas in some of the warning messages. To view/manipulate in MS Excel, use Data -> Get Data -> From Text/CSV, and ensure tab delimiter is selected.
