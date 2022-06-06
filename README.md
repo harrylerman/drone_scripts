@@ -19,7 +19,7 @@ my_fields_new.json: available fields in our tlogs.
 
 There is also a tlog from a flight on June 2, 2022 and that tlog converted to a .csv.
 
-Note: these csv-converted tlogs use tabs for delimiters to avoid issues with lists (ie battery cell voltages) and commas in some of the warning messages. To view/manipulate in MS Excel, use Data -> Get Data -> From Text/CSV, and ensure tab delimiter is selected.
+Note: these csv-converted tlogs use tabs for delimiters to avoid issues with commas in some of the warning messages and issues with lists (ex: battery cell voltages). To view/manipulate in MS Excel, use Data -> Get Data -> From Text/CSV, and ensure tab delimiter is selected. It's preferred/better to use the python CSV module to manipulate data in these files. But, if doing something in Excel, to save the file: save as type "text (tab delimited)" and the resulting .txt file can then be renamed to .csv.
 
 For the python CSV module, ensure to use 
 ~~~
