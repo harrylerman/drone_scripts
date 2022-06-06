@@ -9,7 +9,7 @@ quickplot.py: script to plot a csv-converted tlog file. Can plot any number of i
   
     <inputfile> is a csv-converted tlog file.
     
-    <parameters> is a list of parameters (must be in quotes) to plot vs time, available parameters are in my_fields_fixed.json
+    <parameters> is a list of parameters (must be in quotes) to plot vs time, available parameters are in my_fields_new.json
     
     filepath of the input file is hardcoded to ease commandline use but is simple to edit, could change that too.
     
