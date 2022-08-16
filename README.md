@@ -37,7 +37,7 @@ plot_pos_data.py: script to plot drone position data, either from a csv-converte
 
 my_fields_new.json: available fields in our tlogs. 
 
-fields_MARS_all: updated fields from MARS
+fields_MARS_all.json: updated fields from MARS
 
 There are also tlogs and those tlogs converted to csv's from flights on: June 2 2022; May 24 2022 (csv is zipped). 
 
