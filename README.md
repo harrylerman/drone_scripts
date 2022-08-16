@@ -25,7 +25,8 @@ plot_pos_data.py: script to plot drone position data, either from a csv-converte
     
     for writing animated gif files, it uses the PillowWriter animation writer, I think this is included by default in matplotlib. 
     
-    if the input file delimiter is a tab, then put 'tab' for the delimiter (delimiter must be in quotes). We seem to have settled on the '|' delimiter so this parameter may be deprecated in the future. Default is '|'. 
+    if the input file delimiter is a tab, then put 'tab' for the delimiter (delimiter must be in quotes). 
+      We seem to have settled on the '|' delimiter so this parameter may be deprecated in the future. Default is '|'. 
     
     examples: python plot_pos_data.py -i 2_June.csv -d 'tab' -t
               python plot_pos_data.py -i 2_June.csv -d 'tab' -a 2_June.gif -t
