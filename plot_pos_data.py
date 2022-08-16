@@ -91,7 +91,7 @@ def ReadTlog(file, delim):
             isfirst = False
         x, y = LatLonToXY(lat, lon, ref_lat, radius)
    
-        xcoord.append(-1.0*x)
+        xcoord.append(x)
         ycoord.append(y)
         alt.append(altitude)
         time.append(tstamp)
