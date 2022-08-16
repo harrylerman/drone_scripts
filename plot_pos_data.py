@@ -200,7 +200,7 @@ elif ulog is True:
 fig, ax, npoints = InitFig(xcoord, ycoord, alt)
 
 if isanimated is True:
-    AnimatedPlot(fig, ax, npoints, xcoord, ycoord, alt, time, outputfile)
+    AnimatedPlot(fig, ax, npoints, xcoord, ycoord, alt, time, outfile)
     
 else:
     StaticPlot(ax, xcoord, ycoord, alt, time)  
