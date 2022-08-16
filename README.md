@@ -14,6 +14,23 @@ quickplot.py: script to plot a csv-converted tlog file. Can plot any number of i
     filepath of the input file is hardcoded to ease commandline use but is simple to edit, could change that too.
     
     example: python quickplot.py -i 2_June.csv -p 'VFR_HUD.heading ALTITUDE.altitude_amsl ALTITUDE.altitude_local'
+    
+plot_pos_data.py: script to plot drone position data, either from a csv-converted tlog or a csv-convert ulog. Can output either a static plot or will save an animated gif. Use mavlogparse in this repository to convert tlogs, pyulog (https://github.com/PX4/pyulog) to convert ulogs.
+
+    usage: python plot_pos_data.py -i <inputfile.csv> -d <delimiter> -a <outputfile.gif for animated plot> -t <if a tlog csv> -u <if a ulog csv>
+    
+    for ulogs, use the 'vehicle_local_position' csv file. 
+    
+    filepath is hardcoded, should be the only thing needed to change to use the script. 
+    
+    for writing animated gif files, it uses the PillowWriter animation writer, I think this is included by default in matplotlib. 
+    
+    if the input file delimiter is a tab, then put 'tab' for the delimiter (delimiter must be in quotes). We seem to have settled on the '|' delimiter so this parameter may be deprecated in the future. Default is '|'. 
+    
+    examples: python plot_pos_data.py -i 2_June.csv -d 'tab' -t
+              python plot_pos_data.py -i 2_June.csv -d 'tab' -a 2_June.gif -t
+              python plot_pos_data.py -i 21_22_19_vehicle_local_position_0.csv -d '|' -u
+              python plot_pos_data.py -i 21_22_19_vehicle_local_position_0.csv -d '|' -a 21_22_19.gif -u
 
 my_fields_new.json: available fields in our tlogs. 
 
