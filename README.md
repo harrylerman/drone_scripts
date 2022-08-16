@@ -8,12 +8,12 @@ quickplot.py: script to plot a csv-converted tlog or ulog file. Can plot any num
     usage: python quickplot.py -i <inputfile> -d <delimiter> -p <parameters>
   
     <inputfile> is a csv-converted tlog file.
-    
-    <parameters> is a list of parameters (must be in quotes) to plot vs time, available parameters are in my_fields_new.json
-    
+      
     <delimiter> is the csv file delimiter. if the input file delimiter is a tab, then put 'tab' for the delimiter (delimiter must be in quotes). 
       We seem to have settled on the '|' delimiter so this parameter may be deprecated in the future. Default is '|'.
     
+    <parameters> is a list of parameters (must be in quotes) to plot vs time, available parameters are in my_fields_new.json
+        
     filepath of the input file is hardcoded to ease commandline use but is simple to edit, could change that too.
     
     example: python quickplot.py -i 2_June.csv -d 'tab' -p 'VFR_HUD.heading ALTITUDE.altitude_amsl ALTITUDE.altitude_local'
