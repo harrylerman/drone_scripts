@@ -159,7 +159,7 @@ def InitFig(xcoord, ycoord, alt):
     fig = plt.figure(figsize=(10,10))
     ax = fig.add_subplot(projection='3d')
 
-    npoints = math.ceil(len(xcoord)/300.0)
+    npoints = math.ceil(len(xcoord)/360.0)
     
     ax.set_xlabel('lateral x (North) distance, m')
     ax.set_ylabel('lateral y (East) distance, m')
