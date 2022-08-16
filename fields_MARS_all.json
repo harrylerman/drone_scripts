@@ -1,0 +1,194 @@
+{
+    "ALTITUDE": [
+        "time_usec",
+        "altitude_monotonic",
+        "altitude_amsl",
+        "altitude_local",
+        "altitude_relative",
+        "altitude_terrain",
+        "bottom_clearance"
+    ],
+    "ATTITUDE": [
+        "time_boot_ms",
+        "roll",
+        "pitch",
+        "yaw",
+        "rollspeed",
+        "pitchspeed",
+        "yawspeed"
+    ],
+    "ATTITUDE_TARGET": [
+        "time_boot_ms",
+        "q",
+        "body_roll_rate",
+        "body_pitch_rate",
+        "body_yaw_rate",
+        "thrust"
+    ],
+    "BATTERY_STATUS": [
+        "voltages",
+        "current_battery",
+        "current_consumed",
+        "battery_remaining"
+    ],
+    "COMMAND_ACK": [
+        "command"
+    ],
+    "COMMAND_LONG": [
+        "command",
+        "param1"
+    ],
+    "ESTIMATOR_STATUS": [
+        "time_usec",
+        "vel_ratio",
+        "pos_horiz_ratio",
+        "pos_vert_ratio",
+        "mag_ratio",
+        "pos_horiz_accuracy",
+        "pos_vert_accuracy",
+        "flags"
+    ],
+    "EXTENDED_SYS_STATE": [
+        "landed_state"
+    ],
+    "GLOBAL_POSITION_INT": [
+        "time_boot_ms",
+        "lat",
+        "lon",
+        "alt",
+        "relative_alt",
+        "vx",
+        "vy",
+        "vz",
+        "hdg"
+    ],
+    "GPS_GLOBAL_ORIGIN": [
+        "latitude",
+        "longitude",
+        "altitude"
+    ],
+    "GPS_RAW_INT": [
+        "time_usec",
+        "lat",
+        "lon",
+        "alt",
+        "eph",
+        "epv",
+        "vel",
+        "cog",
+        "satellites_visible",
+        "fix_type"
+    ],
+    "HEARTBEAT": [
+        "type",
+        "autopilot",
+        "base_mode",
+        "custom_mode",
+        "system_status"
+    ],
+    "HOME_POSITION": [
+        "latitude",
+        "longitude",
+        "altitude",
+        "x",
+        "y",
+        "z",
+        "q"
+    ],
+    "LOCAL_POSITION_NED": [
+        "time_boot_ms",
+        "x",
+        "y",
+        "z",
+        "vx",
+        "vy",
+        "vz"
+    ],
+    "PARAM_SET": [
+        "param_id",
+        "param_value",
+        "param_type"
+    ],
+    "PARAM_VALUE": [
+        "param_id",
+        "param_value",
+        "param_type",
+        "param_index",
+        "param_count"
+    ],
+    "PING": [
+        "target_system",
+        "target_component",
+        "time_usec",
+        "seq"
+    ],
+    "POSITION_TARGET_LOCAL_NED": [
+        "time_boot_ms",
+        "x",
+        "y",
+        "z",
+        "vx",
+        "vy",
+        "vz",
+        "yaw",
+        "type_mask",
+        "afx",
+        "afy",
+        "afz",
+        "yaw_rate"
+    ],
+    "RADIO_STATUS": [
+        "rssi",
+        "noise",
+        "remrssi",
+        "remnoise",
+        "rxerrors",
+        "txbuf"
+    ],
+    "RC_CHANNELS": [
+        "time_boot_ms",
+        "chan2_raw",
+        "rssi",
+        "chan5_raw",
+        "chan4_raw",
+        "chan1_raw",
+        "chan3_raw"
+    ],
+    "SERIAL_CONTROL": [
+        "flags",
+        "count",
+        "data"
+    ],
+    "STATUSTEXT": [
+        "text",
+        "severity"
+    ],
+    "SYSTEM_TIME": [
+        "time_unix_usec"
+    ],
+    "SYS_STATUS": [
+        "onboard_control_sensors_enabled",
+        "load",
+        "voltage_battery",
+        "onboard_control_sensors_health",
+        "onboard_control_sensors_present",
+        "current_battery",
+        "battery_remaining"
+    ],
+    "VFR_HUD": [
+        "groundspeed",
+        "heading",
+        "climb",
+        "alt",
+        "throttle"
+    ],
+    "VIBRATION": [
+        "time_usec",
+        "vibration_x",
+        "vibration_y",
+        "vibration_z",
+        "clipping_0",
+        "clipping_1",
+        "clipping_2"
+    ]
+}
