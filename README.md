@@ -7,7 +7,7 @@ quickplot.py: script to plot a csv-converted tlog or ulog file. Can plot any num
 
     usage: python quickplot.py -i <inputfile> -d <delimiter> -p <parameters>
   
-    <inputfile> is a csv-converted tlog file.
+    <inputfile> is a csv-converted tlog or ulog file.
       
     <delimiter> is the csv file delimiter. if the input file delimiter is a tab, then put 'tab' for the delimiter (delimiter must be in quotes). 
       We seem to have settled on the '|' delimiter so this parameter may be deprecated in the future. Default is '|'.
