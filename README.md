@@ -18,6 +18,8 @@ quickplot.py: script to plot a csv-converted tlog or ulog file. Can plot any num
     
     example: python quickplot.py -i 2_June.csv -d 'tab' -p 'VFR_HUD.heading ALTITUDE.altitude_amsl ALTITUDE.altitude_local'
     
+          Some systems may need "double quotes" for these parameters instead of 'single quotes', depends on your setup.
+    
 plot_pos_data.py: script to plot drone position data, either from a csv-converted tlog or a csv-convert ulog. Can output either a static plot or will save an animated gif. Use mavlogparse in this repository to convert tlogs, pyulog (https://github.com/PX4/pyulog) to convert ulogs.
 
     usage: python plot_pos_data.py -i <inputfile.csv> -d <delimiter> -a <outputfile.gif for animated plot> -t <if a tlog csv> -u <if a ulog csv>
