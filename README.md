@@ -3,17 +3,20 @@ Scripts for Pterosoar drone
 
 mavlogparse.py: a script to convert the drone tlogs to .csv files. See mavlogparse_readme for usage instructions.
 
-quickplot.py: script to plot a csv-converted tlog file. Can plot any number of input parameters vs time, plots are vertically stacked.
+quickplot.py: script to plot a csv-converted tlog or ulog file. Can plot any number of input parameters vs time, plots are vertically stacked.
 
-    usage: python quickplot.py -i <inputfile> -p <parameters>
+    usage: python quickplot.py -i <inputfile> -d <delimiter> -p <parameters>
   
     <inputfile> is a csv-converted tlog file.
     
     <parameters> is a list of parameters (must be in quotes) to plot vs time, available parameters are in my_fields_new.json
     
+    <delimiter> is the csv file delimiter. if the input file delimiter is a tab, then put 'tab' for the delimiter (delimiter must be in quotes). 
+      We seem to have settled on the '|' delimiter so this parameter may be deprecated in the future. Default is '|'.
+    
     filepath of the input file is hardcoded to ease commandline use but is simple to edit, could change that too.
     
-    example: python quickplot.py -i 2_June.csv -p 'VFR_HUD.heading ALTITUDE.altitude_amsl ALTITUDE.altitude_local'
+    example: python quickplot.py -i 2_June.csv -d 'tab' -p 'VFR_HUD.heading ALTITUDE.altitude_amsl ALTITUDE.altitude_local'
     
 plot_pos_data.py: script to plot drone position data, either from a csv-converted tlog or a csv-convert ulog. Can output either a static plot or will save an animated gif. Use mavlogparse in this repository to convert tlogs, pyulog (https://github.com/PX4/pyulog) to convert ulogs.
 
