@@ -37,12 +37,9 @@ plot_pos_data.py: script to plot drone position data, either from a csv-converte
 
 my_fields_new.json: available fields in our tlogs. 
 
+fields_MARS_all: updated fields from MARS
+
 There are also tlogs and those tlogs converted to csv's from flights on: June 2 2022; May 24 2022 (csv is zipped). 
 
-Note: these csv-converted tlogs use tabs for delimiters to avoid issues with commas in some of the warning messages and issues with lists (ex: battery cell voltages). To view/manipulate in MS Excel, use Data -> Get Data -> From Text/CSV, and ensure tab delimiter is selected. It's preferred/better to use the python csv module to manipulate data in these files. But, if doing something in Excel, to save the file: save as type "text (tab delimited)" and the resulting .txt file can then be renamed to .csv.
+Note: these csv-converted tlogs don't use commas as delimiters to avoid issues with commas in some of the warning messages and issues with lists (ex: battery cell voltages). To view/manipulate in MS Excel, use Data -> Get Data -> From Text/CSV, and ensure the correct delimiter should auto-select. It's preferred/better to use the python csv module to manipulate data in these files. But, if doing something in Excel, to save the file: save as type "text (tab delimited)" and the resulting .txt file can then be renamed to .csv.
 
-For the python csv module, ensure to use 
-~~~
-delimiter='\t'
-~~~
-where applicable.
