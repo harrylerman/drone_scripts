@@ -32,6 +32,8 @@ plot_pos_data.py: script to plot drone position data, either from a csv-converte
               python plot_pos_data.py -i 2_June.csv -d 'tab' -a 2_June.gif -t
               python plot_pos_data.py -i 21_22_19_vehicle_local_position_0.csv -d '|' -u
               python plot_pos_data.py -i 21_22_19_vehicle_local_position_0.csv -d '|' -a 21_22_19.gif -u
+              
+          Some systems may need "double quotes" for these parameters instead of 'single quotes', depends on your setup. 
 
 my_fields_new.json: available fields in our tlogs. 
 
