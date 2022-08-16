@@ -18,18 +18,18 @@ def getparams(argv):
     '''
     inputfile = ''
     outputfile = ''
-    delim = ''
+    delim='|'
     isanimated = False
     tlog = False
     ulog = False
     try:
         opts, args = getopt.getopt(argv, "hi:d:a:tu")
     except getopt.GetoptError:
-        print('quickplot.py -i <inputfile.csv> -d <delimiter> -a <outputfile.gif for animated plot> -t <if a tlog csv> -u <if a ulog csv>')
+        print('plot_pos_data.py -i <inputfile.csv> -d <delimiter> -a <outputfile.gif for animated plot> -t <if a tlog csv> -u <if a ulog csv>')
         sys.exit(2)
     for opt, arg in opts:
         if opt == '-h':
-            print('quickplot.py -i <inputfile.csv> -d <delimiter> -a <outputfile.gif for animated plot> -t <if a tlog csv> -u <if a ulog csv>')
+            print('plot_pos_data.py -i <inputfile.csv> -d <delimiter> -a <outputfile.gif for animated plot> -t <if a tlog csv> -u <if a ulog csv>')
             sys.exit()
         elif opt in ("-i"):
             inputfile = arg
@@ -61,7 +61,7 @@ def LatLonToXY(lat,lon,ref_lat,radius):
     y = radius*np.radians(lat)
     return x, y
 
-def ReadTlog(file, delim='|'):
+def ReadTlog(file, delim):
     """
     Read in data from a csv-converted tlog
     """
@@ -107,7 +107,7 @@ def ReadTlog(file, delim='|'):
 
     return time, xcoord, ycoord, alt
 
-def ReadUlog(file, delim='|'):
+def ReadUlog(file, delim):
     """
     Read in data from a csv-converted ulog
     """
