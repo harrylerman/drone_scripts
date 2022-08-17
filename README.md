@@ -5,7 +5,7 @@ mavlogparse.py: a script to convert the drone tlogs to .csv files. See mavlogpar
 
 quickplot.py: script to plot a csv-converted tlog or ulog file. Can plot any number of input parameters vs time, plots are vertically stacked. Use mavlogparse in this repository to convert tlogs, pyulog (https://github.com/PX4/pyulog) to convert ulogs.
 
-    usage: python quickplot.py -i <inputfile> -d <delimiter> -p <parameters>
+    usage: python quickplot.py -i <inputfile.csv> -d <delimiter> -p <parameters>
   
     <inputfile> is a csv-converted tlog or ulog file.
       
