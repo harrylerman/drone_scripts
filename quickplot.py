@@ -39,7 +39,7 @@ def getparams(argv):
 
 def readlog(file, params, delim):
     '''
-    Reads in a csv-converted tlog file (should be converted with mavlogparse script)
+    Reads in a csv-converted tlog or ulog file (converted with mavlogparse or pyulog)
     Returns a list of timestamps (in unix epoch time)
     Also returns a list of lists to plot - each individual list corresponds to
     one of the input parameters.
