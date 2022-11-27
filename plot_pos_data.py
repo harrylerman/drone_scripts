@@ -161,8 +161,8 @@ def InitFig(xcoord, ycoord, alt):
 
     npoints = math.ceil(len(xcoord)/300.0)
     
-    ax.set_xlabel('lateral x (North) distance, m')
-    ax.set_ylabel('lateral y (East) distance, m')
+    ax.set_xlabel('lateral x (East) distance, m')
+    ax.set_ylabel('lateral y (North) distance, m')
     ax.set_zlabel('altitude, m')
     ax.set_xlim(min(xcoord), max(xcoord))
     ax.set_ylim(min(ycoord), max(ycoord))
